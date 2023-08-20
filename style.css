@@ -1,0 +1,178 @@
+@media (min-width: 1000px) {
+body {
+    background: url(/images/back.gif);
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    font-family: monospace;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    color: white;
+}
+#stickers {
+    border-top: 1px solid gray;
+    padding: 0px;
+    height: 40px;
+    flex-grow: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    align-content: bottom;
+    align-items: flex-end;
+    width: 100vw;
+
+}
+
+#back {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: rgb(0, 217, 255);
+    color: white;
+    padding: 0px 5px
+}
+
+#content {
+    box-shadow: -25px 15px 10px #96b1b1;
+    border-radius: 4px;
+    background: #181a1b;
+    color: white;
+    border: 1px solid gray;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden auto;
+}
+#content #main {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    margin-block: auto;
+    padding-block: 20px;
+    text-align: center;
+    color: white;
+}
+h1 {
+    margin-bottom: 0;
+    color: white;
+}
+a {
+    padding-right: 15px;
+    color: white;
+}
+.lighter {
+    color: gray;
+}
+img {
+    border-radius: 4px;
+    vertical-align: middle;
+}
+a img {
+    padding-right: 1px;
+    height: 30px;
+    width: 30px;
+    overflow: hidden;
+}
+#stickers img {
+    border-radius: 2px;
+    height: 31px;
+    width: 88px;
+}
+#mainframe{
+    border: none;         /* Reset default border */
+    height: 50vh;        /* Viewport-relative units */
+    width: 50vw;
+  }
+
+
+}
+
+
+@media (min-width: 320px) and (max-width: 999px) {
+    body {  
+        margin: 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        font-family: monospace;
+        justify-content: center;
+        align-items: center;
+        border-radius: 15px;
+        background: #181a1b;
+        color: white;
+    }
+    #stickers {
+        display: none;
+    }
+    
+    #footer {
+        display: none;
+    }
+    
+    #back {
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: #181a1b;
+        color: white;
+        padding: 0px 0px
+    }
+    
+    #content {
+        border-radius: 4px;
+        display: flex;
+        background: #181a1b;
+        justify-content: space-between;
+        overflow: hidden auto;
+    }
+    #content #main {
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        margin-top: 0px;
+        margin-block: auto;
+        padding-block: 0px;
+        text-align: left;
+
+    }
+    h1 {
+        margin-bottom: 0;
+    }
+    a {
+        padding-right: 15px;
+        color: white;
+    }
+    .lighter {
+        color: gray;
+    }
+    img {
+        border-radius: 4px;
+        vertical-align: middle;
+    }
+    a img {
+        padding-right: 1px;
+        height: 30px;
+        width: 30px;
+        overflow: hidden;
+    }
+    #stickers img {
+        border-radius: 2px;
+        height: 31px;
+        width: 88px;
+    }
+    #mainframe{
+        border: none;         /* Reset default border */
+        height: 80vh;        /* Viewport-relative units */
+        width: 100%;
+      }
+    
+    }
