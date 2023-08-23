@@ -52,8 +52,8 @@ body {
     overflow: hidden auto;
 }
 #content #main {
-    margin-left: 0px;
-    margin-right: 0px;
+    margin-left: 30px;
+    margin-right: 30px;
     margin-bottom: 0px;
     margin-top: 0px;
     margin-block: auto;
@@ -135,8 +135,8 @@ a img {
         overflow: hidden auto;
     }
     #content #main {
-        margin-left: 0px;
-        margin-right: 0px;
+        margin-left: 10px;
+        margin-right: 10px;
         margin-bottom: 0px;
         margin-top: 0px;
         margin-block: auto;

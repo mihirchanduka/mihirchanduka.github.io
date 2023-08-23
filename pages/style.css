@@ -29,7 +29,7 @@ body {
     width: 100vw;
 
 }
-
+    
 #back {
     position: absolute;
     left: 0;
@@ -78,14 +78,3 @@ a img {
     width: 30px;
     overflow: hidden;
 }
-#stickers img {
-    border-radius: 2px;
-    height: 31px;
-    width: 88px;
-}
-#mainframe{
-    top:-0px;
-    left:2px;
-      scrollbar-color: #8f38ff #d6ecf3;
-    scrollbar-width: thin;
-  }
