@@ -46,7 +46,7 @@ body {
     border-radius: 4px;
     background: #181a1b;
     color: white;
-    border: 1px solid gray;
+    border: 0px solid gray;
     display: flex;
     justify-content: space-between;
     overflow: hidden auto;
