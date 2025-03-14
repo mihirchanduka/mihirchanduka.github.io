@@ -1,6 +1,6 @@
 @media (min-width: 1000px) {
 body {
-    background: url(/images/back.gif);
+    background: #E5e4df;
     margin: 0;
     height: 100vh;
     width: 100vw;
@@ -9,7 +9,7 @@ body {
     justify-content: center;
     align-items: center;
     border-radius: 15px;
-    color: white;
+    color: #E5e4df;
 }
 #stickers {
     border-top: 1px solid gray;
@@ -37,14 +37,14 @@ body {
     left: 0;
     top: 0;
     background: rgb(0, 217, 255);
-    color: white;
+    color: #141413;
     padding: 0px 5px
 }
 
 #content {
-    box-shadow: -25px 15px 10px #96b1b1;
+    /*box-shadow: -25px 15px 10px #96b1b1;*/
     border-radius: 4px;
-    background: #181a1b;
+    background: #AEB1AA;
     color: white;
     border: 0px solid gray;
     display: flex;
@@ -59,7 +59,7 @@ body {
     margin-block: auto;
     padding-block: 20px;
     text-align: center;
-    color: white;
+    color: #191919;
 }
 h1 {
     margin-bottom: 0;
@@ -67,7 +67,7 @@ h1 {
 }
 a {
     padding-right: 15px;
-    color: white;
+    color: #141413;
 }
 .lighter {
     color: gray;
@@ -107,7 +107,7 @@ a img {
         justify-content: center;
         align-items: center;
         border-radius: 15px;
-        background: #181a1b;
+        background: #AEB1AA;
         color: white;
     }
     #stickers {
@@ -122,7 +122,7 @@ a img {
         position: absolute;
         left: 0;
         top: 0;
-        background: #181a1b;
+        background: #AEB1AA;
         color: white;
         padding: 0px 0px
     }
@@ -130,7 +130,7 @@ a img {
     #content {
         border-radius: 4px;
         display: flex;
-        background: #181a1b;
+        background: #AEB1AA;
         justify-content: space-between;
         overflow: hidden auto;
     }

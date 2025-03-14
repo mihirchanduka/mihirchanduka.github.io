@@ -7,7 +7,7 @@ body {
     justify-content: center;
     align-items: center;
     border-radius: 15px;
-    color: white;
+    color: #191919;
 }
 #stickers {
     border-top: 1px solid gray;
@@ -59,14 +59,14 @@ body {
 }
 h1 {
     margin-bottom: 0;
-    color: white;
+    color: #141413;
 }
 a {
     padding-right: 15px;
-    color: white;
+    color: #141413;
 }
 .lighter {
-    color: gray;
+    color: #141413;
 }
 img {
     border-radius: 4px;
