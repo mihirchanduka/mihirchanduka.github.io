@@ -1,6 +1,8 @@
 @media (min-width: 1000px) {
 body {
-    background: url(/images/back.gif);
+    background: url(images/bg.JPG) no-repeat center center fixed;
+    background-size: cover;
+    background-color: #394c5d;
     margin: 0;
     height: 100vh;
     width: 100vw;
@@ -42,10 +44,10 @@ body {
 }
 
 #content {
-    box-shadow: -25px 15px 10px #96b1b1;
+    /*box-shadow: -25px 15px 10px #96b1b1;*/
     border-radius: 4px;
-    background: #181a1b;
-    color: white;
+    background: #C4CED6;
+    color: #191919;
     border: 0px solid gray;
     display: flex;
     justify-content: space-between;
@@ -59,7 +61,7 @@ body {
     margin-block: auto;
     padding-block: 20px;
     text-align: center;
-    color: white;
+    color: #191919;
 }
 h1 {
     margin-bottom: 0;
@@ -67,7 +69,7 @@ h1 {
 }
 a {
     padding-right: 15px;
-    color: white;
+    color: #191919;
 }
 .lighter {
     color: gray;
@@ -107,8 +109,8 @@ a img {
         justify-content: center;
         align-items: center;
         border-radius: 15px;
-        background: #181a1b;
-        color: white;
+        background: #C4CED6;
+        color: #191919;
     }
     #stickers {
         display: none;
@@ -123,14 +125,14 @@ a img {
         left: 0;
         top: 0;
         background: #181a1b;
-        color: white;
+        color: #191919;
         padding: 0px 0px
     }
     
     #content {
         border-radius: 4px;
         display: flex;
-        background: #181a1b;
+        background: #C4CED6;
         justify-content: space-between;
         overflow: hidden auto;
     }
@@ -149,7 +151,7 @@ a img {
     }
     a {
         padding-right: 15px;
-        color: white;
+        color: #191919;
     }
     .lighter {
         color: gray;

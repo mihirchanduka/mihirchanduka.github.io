@@ -7,7 +7,7 @@ body {
     justify-content: center;
     align-items: center;
     border-radius: 15px;
-    color: white;
+    color: #191919;
 }
 #stickers {
     border-top: 1px solid gray;
@@ -42,7 +42,7 @@ body {
 #content {
     box-shadow: -25px 15px 10px #96b1b1;
     border-radius: 4px;
-    background: white;
+    background: #191919;
     border: 1px solid gray;
     display: flex;
     justify-content: space-between;
@@ -59,11 +59,11 @@ body {
 }
 h1 {
     margin-bottom: 0;
-    color: white;
+    color: #191919;
 }
 a {
     padding-right: 15px;
-    color: white;
+    color: #191919;
 }
 .lighter {
     color: gray;
