@@ -1,98 +1,99 @@
 @font-face {
   font-family: iaWriter;
   src: url(iAWriterMonoS-Regular.woff);
+}:root {
+    --background: #cccccf;
+    --foreground: #36363e;
+    --interval-height: 24px;
 }
-
-:root {
-    --background: #CCCCCF;
-    --foreground: #36363E;
-  --interval-height: 24px;
-}
-
 
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-html, body {
-  min-height: 100vh;
-  height: 100%;
-  font-size: 16px;
-  line-height: var(--interval-height);
-  font-family: 'iaWriter', monospace;
-  background: var(--background);
-  color: var(--foreground);
-  -webkit-font-smoothing: antialiased;
-}
+html,
+body {
+    min-height: 100vh;
+    height: 100%;
+    font-size: 16px;
+    line-height: var(--interval-height);
+    font-family:
+        "SF Mono", "Monaco", "Inconsolata", "Fira Code", "Fira Mono",
+        "Droid Sans Mono", "Consolas", "Source Code Pro", monospace;
+    background: var(--background);
+    color: var(--foreground);
+    -webkit-font-smoothing: antialiased;
+Writer', mon}
 
 .outer-container {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 15px;
-  overflow-x: hidden;
-  max-width: 100vw;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    overflow-x: hidden;
+    max-width: 100vw;
 }
 
 .inner-container {
-  max-width: 40rem;
-  padding: 2rem;
-  width: 100%;
-  overflow-wrap: break-word;
-  word-wrap: break-word;
-  word-break: break-word;
+    max-width: 40rem;
+    padding: 2rem;
+    width: 100%;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
 }
 
 p {
-  margin-bottom: 1rem;
+    margin-bottom: 1rem;
 }
 
 a {
-  color: var(--foreground);
-  text-decoration: none;
-  border-bottom: 1px solid var(--foreground);
-  padding-bottom: 1px;
+    color: var(--foreground);
+    text-decoration: none;
+    border-bottom: 1px solid var(--foreground);
+    padding-bottom: 1px;
 }
 
 .theme-switcher {
-  position: fixed;
-  bottom: 1rem;
-  right: 1rem;
-  display: flex;
-  gap: 0.5rem;
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    display: flex;
+    gap: 0.5rem;
 }
 
 .theme-btn {
-  width: 1.5rem;
-  height: 1.5rem;
-  border: 1px solid var(--foreground);
-  border-radius: 50%;
-  cursor: pointer;
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 1px solid var(--foreground);
+    border-radius: 50%;
+    cursor: pointer;
 }
 
 .links {
-  margin-top: 2rem;
+    margin-top: 2rem;
 }
 
 @media only screen and (max-width: 768px) {
-  html, body {
-    font-size: 18px;
-    line-height: 32px;
-    overflow-x: auto;
-  }
-  
-  .inner-container {
-    padding: 1.5rem;
-    width: 100%;
-  }
+    html,
+    body {
+        font-size: 18px;
+        line-height: 32px;
+        overflow-x: auto;
+    }
 
-  .outer-container {
-    padding: 30px 20px;
-    height: auto;
-    min-height: 100vh;
-  }
+    .inner-container {
+        padding: 1.5rem;
+        width: 100%;
+    }
+
+    .outer-container {
+        padding: 30px 20px;
+        height: auto;
+        min-height: 100vh;
+    }
 }
