@@ -3,10 +3,6 @@
 @title  Golgol (Infinite & Active)
 @desc   High-res GOL with Wrap-around and Auto-wandering spawner.
 
-Features:
-1.  Wrap-around (Toroidal surface)
-2.  "Wandering Cursor": An automated emitter moves across the screen to keep it active.
-3.  Clean visuals (No trails)
 */
 
 export const settings = { fps: 60 };
