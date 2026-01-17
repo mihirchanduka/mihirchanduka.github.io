@@ -5,7 +5,7 @@
 
 */
 
-export const settings = { fps: 60 };
+export const settings = { fps: 30 };
 
 // Safe set function with Wrap Around
 function set(val, x, y, w, h, buf) {
