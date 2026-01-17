@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en" data-theme="1">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>404 - Not Found</title>
+        <meta name="description" content="Mihir Chanduka - Student" />
+        <link rel="stylesheet" href="index.css" />
+        <meta property="og:title" content="Mihir Chanduka" />
+        <meta property="og:description" content="Mihir Chanduka - Student" />
+        <link rel="apple-touch-icon" href="icon.png" />
+        <link rel="icon" href="favicon.ico" />
+    </head>
+
+    <body id="body-container" class="">
+        <div class="outer-container">
+            <div class="inner-container">
+                <div class="content-container">
+                    <div class="content-row">
+                        <p>
+                            <span>404</span>
+                            <span>Not Found</span>
+                        </p>
+                    </div>
+                    <div class="content-row content-row-empty"></div>
+                    <div class="content-row">
+                        <a
+                            href="/"
+                            class="content-link"
+                            tabindex="1"
+                            style="text-decoration: none; color: inherit"
+                        >
+                            <span class="button-label">Go Home</span>
+                            <span class="mobile-only">[↵]</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="ascii" class="ascii-container">
+                    <pre data-selection-enabled="false"></pre>
+                    <div id="ascii-hint" class="ascii-hint">[&nbsp;]</div>
+                </div>
+
+                <div id="ascii-click" class="ascii-click-container"></div>
+            </div>
+        </div>
+
+        <script src="index.js"></script>
+        <script type="module">
+            import { run } from "./src/run.js";
+            import * as program from "./GOL.js";
+            run(program, { element: document.querySelector("pre") });
+        </script>
+    </body>
+</html>
