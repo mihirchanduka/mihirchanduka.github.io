@@ -1,4 +1,3 @@
-
 const themeToggle = document.getElementById("theme-toggle");
 const emailCopy = document.getElementById("email-copy");
 const emailLink = document.getElementById("email-link");
@@ -31,46 +30,58 @@ if (storedTheme) {
 }
 
 themeToggle.onclick = () => {
-    let currentTheme = document.documentElement.getAttribute("data-theme");
-    let targetTheme = "1";
-    switch (currentTheme) {
-        case "1": targetTheme = "2"; break;
-        case "2": targetTheme = "3"; break;
-        case "3": targetTheme = "4"; break;
-        case "4": targetTheme = "5"; break;
-        case "5": targetTheme = "6"; break;
-        case "6": targetTheme = "7"; break;
-    }
-    document.documentElement.setAttribute("data-theme", targetTheme);
-    localStorage.setItem("theme", targetTheme);
+  let currentTheme = document.documentElement.getAttribute("data-theme");
+  let targetTheme = "1";
+  switch (currentTheme) {
+    case "1":
+      targetTheme = "2";
+      break;
+    case "2":
+      targetTheme = "3";
+      break;
+    case "3":
+      targetTheme = "4";
+      break;
+    case "4":
+      targetTheme = "5";
+      break;
+    case "5":
+      targetTheme = "6";
+      break;
+    case "6":
+      targetTheme = "7";
+      break;
+  }
+  document.documentElement.setAttribute("data-theme", targetTheme);
+  localStorage.setItem("theme", targetTheme);
 };
 
 emailCopy.onmouseenter = () => {
-    const root = document.querySelector(":root");
-    root.style.setProperty("--copy-text", `" [+]"`);
+  const root = document.querySelector(":root");
+  root.style.setProperty("--copy-text", `" [+]"`);
 };
 
 emailCopy.onfocus = () => {
-    const root = document.querySelector(":root");
-    root.style.setProperty("--copy-text", `" [+]"`);
+  const root = document.querySelector(":root");
+  root.style.setProperty("--copy-text", `" [+]"`);
 };
 
 emailCopy.onclick = () => {
-    navigator.clipboard.writeText("chandukamihir@proton.com");
-    const root = document.querySelector(":root");
-    root.style.setProperty("--copy-text", `" [COPIED]"`);
+  navigator.clipboard.writeText("chandukamihir@proton.com");
+  const root = document.querySelector(":root");
+  root.style.setProperty("--copy-text", `" [COPIED]"`);
 };
 
 emailLink.onclick = () => {
-    window.location.href = "mailto:chandukamihir@proton.com";
+  window.location.href = "mailto:chandukamihir@proton.com";
 };
 
 linkedinLink.onclick = () => {
-    window.open("https://www.linkedin.com/in/mihirchanduka/", "_blank");
+  window.open("https://www.linkedin.com/in/mihirchanduka/", "_blank");
 };
 
 githubLink.onclick = () => {
-    window.open("https://github.com/mihirchanduka", "_blank");
+  window.open("https://github.com/mihirchanduka", "_blank");
 };
 
 for (const [id, url] of Object.entries(links)) {
