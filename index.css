@@ -145,8 +145,13 @@ table {
 }
 
 @font-face {
-    font-family: iaWriter;
+    font-family: iAWriterMono;
     src: url(iAWriterMonoS-Regular.woff);
+}
+
+@font-face {
+    font-family: Commit;
+    src: url(CommitMono-400-Regular.otf);
 }
 
 * {
@@ -162,7 +167,7 @@ body {
     margin: 0;
     font-size: 16px;
     line-height: 24px;
-    font-family: "iaWriter", monospace;
+    font-family: "Commit", monospace;
     background: var(--background);
     color: var(--foreground);
     -webkit-font-smoothing: antialiased;
@@ -178,23 +183,23 @@ body {
 
 /* Themes */
 html[data-theme="1"] {
-    --background: #ffffff;
-    --foreground: #33333a;
+    --background: #f7f3e8;
+    --foreground: #1f2328;
 }
 
 html[data-theme="2"] {
-    --background: #cccccf;
-    --foreground: #36363e;
+    --background: #cccccc;
+    --foreground: #111111;
 }
 
 html[data-theme="3"] {
-    --background: #95abc0;
-    --foreground: #2b303b;
+    --background: #c7d8c6;
+    --foreground: #1e2a1e;
 }
 
 html[data-theme="4"] {
-    --background: #44444a;
-    --foreground: #b4b4b7;
+    --background: #2a2a31;
+    --foreground: #f2d9a6;
 }
 
 html[data-theme="5"] {
@@ -203,13 +208,13 @@ html[data-theme="5"] {
 }
 
 html[data-theme="6"] {
-    --background: #11111a;
-    --foreground: #dddddd;
+    --background: #0f1720;
+    --foreground: #d6e4ff;
 }
 
 html[data-theme="7"] {
-    --background: #11111a;
-    --foreground: #6acac9;
+    --background: #2b0f14;
+    --foreground: #ffb8c2;
 }
 
 /* Layout */
@@ -260,6 +265,7 @@ html[data-theme="7"] {
 
 .content-no-link {
     display: inline-block;
+    padding-left: 3px;
 }
 
 .content-no-link:focus-visible:after,
@@ -334,10 +340,13 @@ pre {
     width: 100%;
     height: 100%;
     font-family: inherit;
-    text-align: right;
+    text-align: left;
     user-select: none;
     letter-spacing: 0;
+    font-size: 16px;
     line-height: 1;
+    font-kerning: none;
+    font-variant-ligatures: none;
 }
 
 .ascii-hint {
@@ -487,5 +496,6 @@ pre {
         text-align: left;
         opacity: 0.2;
         background: #ff3300;
+        font-size: 18px;
     }
 }

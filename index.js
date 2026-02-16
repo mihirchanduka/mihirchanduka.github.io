@@ -1,6 +1,7 @@
 const themeToggle = document.getElementById("theme-toggle");
 const emailCopy = document.getElementById("email-copy");
 const emailLink = document.getElementById("email-link");
+const linkPreview = document.getElementById("link-preview");
 const linkedinLink = document.getElementById("linkedin-link");
 const githubLink = document.getElementById("github-link");
 
