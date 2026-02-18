@@ -24,6 +24,16 @@ function get(x, y, w, h, buf) {
 let cols, rows;
 const data = [];
 
+function stampBrush(buf, cx, cy, radius, w, h, chance = 0.5) {
+  for (let y = cy - radius; y <= cy + radius; y++) {
+    for (let x = cx - radius; x <= cx + radius; x++) {
+      if (Math.random() < chance) {
+        set(1, x, y, w, h, buf);
+      }
+    }
+  }
+}
+
 export function pre(context, cursor, buffer) {
   // Init or Resize
   if (cols != context.cols || rows != context.rows) {
@@ -64,15 +74,28 @@ export function pre(context, cursor, buffer) {
   }
 
   // --- MOUSE INTERACTION ---
-  if (cursor.pressed) {
-    const cx = Math.floor(cursor.x);
-    const cy = Math.floor(cursor.y * 2);
-    const brush = 3;
-    for (let y = cy - brush; y < cy + brush; y++) {
-      for (let x = cx - brush; x < cx + brush; x++) {
-        set(Math.random() > 0.5 ? 1 : 0, x, y, w, h, prev);
-      }
+  // Hover creates a subtle trail, click-drag creates a stronger burst.
+  const cx = Math.floor(cursor.x);
+  const cy = Math.floor(cursor.y * 2);
+  const px = Math.floor(cursor.p.x);
+  const py = Math.floor(cursor.p.y * 2);
+
+  const moved = cx !== px || cy !== py;
+  if (moved) {
+    const dx = cx - px;
+    const dy = cy - py;
+    const steps = Math.max(Math.abs(dx), Math.abs(dy), 1);
+
+    for (let i = 0; i <= steps; i++) {
+      const tStep = i / steps;
+      const mx = Math.floor(px + dx * tStep);
+      const my = Math.floor(py + dy * tStep);
+      stampBrush(prev, mx, my, 1, w, h, 0.3);
     }
+  }
+
+  if (cursor.pressed) {
+    stampBrush(prev, cx, cy, 3, w, h, 0.7);
   }
 
   // --- SIMULATION LOOP ---

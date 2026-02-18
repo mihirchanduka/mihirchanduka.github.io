@@ -332,6 +332,7 @@ button:active {
     height: 100%;
     right: 3px;
     top: 0px;
+    pointer-events: none;
 }
 
 pre {
