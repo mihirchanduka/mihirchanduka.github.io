@@ -15,6 +15,7 @@ const links = {
   "link-7": "https://github.com/mihirchanduka/EKGuide",
   "link-8": "https://github.com/mihirchanduka/posterboxd",
   "link-9": "https://github.com/mihirchanduka/Optical-Flow-Anticheat",
+  "link-10": "https://github.com/mihirchanduka/toni",
 };
 
 const storedTheme =
