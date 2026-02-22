@@ -4,18 +4,20 @@ const emailLink = document.getElementById("email-link");
 const linkPreview = document.getElementById("link-preview");
 const linkedinLink = document.getElementById("linkedin-link");
 const githubLink = document.getElementById("github-link");
+const blogLink = document.getElementById("blog-link");
 
 const links = {
   "link-1": "https://aresty.rutgers.edu/",
   "link-2": "https://www.nyc.gov/content/omb/pages/",
-  "link-3": "https://devpost.com/software/brahma",
-  "link-4": "https://github.com/mihirchanduka/RUHealthHacks",
-  "link-5": "https://devpost.com/software/seis-to-seven",
-  "link-6": "https://devpost.com/software/signsense-hyeclg",
-  "link-7": "https://github.com/mihirchanduka/EKGuide",
-  "link-8": "https://github.com/mihirchanduka/posterboxd",
-  "link-9": "https://github.com/mihirchanduka/Optical-Flow-Anticheat",
-  "link-10": "https://github.com/mihirchanduka/toni",
+
+  "link-3": "https://github.com/mihirchanduka/toni",
+  "link-4": "https://github.com/mihirchanduka/posterboxd",
+  "link-5": "https://github.com/mihirchanduka/Optical-Flow-Anticheat",
+  "link-6": "https://devpost.com/software/brahma",
+  "link-7": "https://github.com/mihirchanduka/RUHealthHacks",
+  "link-8": "https://devpost.com/software/seis-to-seven",
+  "link-9": "https://devpost.com/software/signsense-hyeclg",
+  "link-10": "https://github.com/mihirchanduka/EKGuide",
 };
 
 const storedTheme =
@@ -85,6 +87,12 @@ linkedinLink.onclick = () => {
 githubLink.onclick = () => {
   window.open("https://github.com/mihirchanduka", "_blank");
 };
+
+if (blogLink) {
+  blogLink.onclick = () => {
+    window.location.href = "/blog/";
+  };
+}
 
 for (const [id, url] of Object.entries(links)) {
   const linkElement = document.getElementById(id);
